@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login | Login.com</title>
+  </head>
+  <body>
+    <form action="/login" method="post">
+    <p>Username:</p>
+    <input type="text" name="username"></input>
+    <p>Password:</p>
+    <input name="password" type="password"></input>
+    <button type="submit">LOG IN</button>
+    </form>
+    {{#errors}}
+    {{.}}
+    {{/errors}}
+
+
+
+
+
+  </body>
+</html>

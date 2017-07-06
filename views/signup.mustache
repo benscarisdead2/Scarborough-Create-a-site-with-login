@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Signup | Login.com</title>
+  </head>
+  <body>
+    <form action="/signup" method="post">
+    <p>Username:</p>
+    <input type="text" name="username"></input>
+    <p>Password:</p>
+    <input name="password" type="password"></input>
+    <p>Confirm your password:</p>
+    <input name="confirmation" type="password"></input>
+    <button type="submit">SIGN UP</button>
+    </form>
+    {{#errors}}
+    {{.}}
+    {{/errors}}
+
+
+
+
+
+  </body>
+</html>
